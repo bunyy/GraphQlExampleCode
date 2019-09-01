@@ -1,0 +1,18 @@
+@import "scss/settings/variable.scss"; //themes' colors
+
+.register__text {
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+}
+
+.register__button {
+  margin-top: 20px;
+
+  @media (min-width: 640px) {
+    margin-top: 30px;
+  }
+}

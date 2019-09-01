@@ -1,0 +1,98 @@
+@import "scss/settings/variable.scss"; //themes' colors
+
+.login__background {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  background: url(../../../assets/images/midstreetImage/midstreetImage.jpg)
+    no-repeat center;
+  background-size: cover;
+
+  @media (min-width: 880px) {
+    justify-content: flex-end;
+    margin-right: 90px;
+  }
+}
+
+.login__card {
+  display: flex;
+  width: 500px;
+  padding: 15px;
+  flex-direction: column;
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 880px) {
+    margin-right: 90px;
+  }
+}
+
+.login__container {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 15px 30px 30px;
+  box-shadow: 0 0 30px 1px rgba(27, 44, 83, 0.07);
+}
+
+.login__branding {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo__branding {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  width: auto;
+  max-width: 150px;
+}
+
+.title {
+  flex: 1;
+  margin-left: 10px;
+  color: #4a4a4a;
+  font-family: Helvetica, Montserrat;
+  font-size: 16px;
+}
+
+.login__title {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.login__title h2 {
+  color: $color-primary;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.login__form {
+  margin: 45px 0 0 -5px;
+}
+
+.register__container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-register-container;
+  padding: 25px;
+}

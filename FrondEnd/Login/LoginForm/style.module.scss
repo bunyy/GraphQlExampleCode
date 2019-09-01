@@ -1,0 +1,105 @@
+@import "scss/settings/variable.scss"; //themes' colors
+
+.login__form__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+
+  @media (min-width: 360px) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media (min-width: 640px) {
+    margin-top: 70px;
+  }
+}
+
+.login__button {
+  flex: 1;
+}
+
+.login__forgot__password {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  color: $color-primary;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-top: 25px;
+  cursor: pointer;
+
+  @media (min-width: 360px) {
+    margin-top: 0;
+  }
+}
+
+.forgot-password__form {
+  box-shadow: 0 0 30px 1px rgba(27, 44, 83, 0.07);
+}
+
+.modal__body {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.modal__footer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 20px 35px;
+  border-top: 1px solid #ededed;
+  box-shadow: inset 0 0 30px 1px rgba(27, 44, 83, 0.07);
+
+  @media (min-width: 480px) {
+    justify-content: flex-end;
+  }
+}
+
+.forgot__form {
+  width: 100%;
+  padding: 30px 20px 30px 15px;
+
+  @media (min-width: 480px) {
+    padding: 30px 35px 30px 30px;
+  }
+}
+
+.info__text {
+  color: $color-primary;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f2f6ff;
+  padding: 20px;
+  margin-top: 30px;
+
+  @media (min-width: 480px) {
+    padding: 10px 35px;
+    margin-top: 70px;
+  }
+}
+
+.info__text p {
+  margin-top: 0;
+}
+
+.info__icon {
+  width: 25px;
+  float: left;
+  margin-right: 10px;
+}
